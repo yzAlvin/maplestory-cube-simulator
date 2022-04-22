@@ -1,0 +1,30 @@
+TIERS:
+Rare
+Epic
+Unique
+Legendary
+
+
+
+
+
+CHANCES OF UPGRADE:
+(Occult Cube)
+Rare -> Epic : 1%
+Epic -> Unique : N/A
+Unique -> Legendary : N/A
+
+(Master Craftsman Cube)
+Rare -> Epic : 11.8%
+Epic -> Unique : 3.8%
+Unique -> Legendary : N/A
+
+(Red Cube/Meister)
+Rare -> Epic : 14.1%
+Epic -> Unique : 6%
+Unique -> Legendary : 2.4%
+
+(Black Cube)
+Rare -> Epic : 16%
+Epic -> Unique : 11%
+Unique -> Legendary : 4.7%
