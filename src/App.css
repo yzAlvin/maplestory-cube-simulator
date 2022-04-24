@@ -15,9 +15,18 @@
   border-style: solid;
 }
 
-.item-list {
+.item-list, .potential-list {
   text-align: left;
   list-style: none;
+}
+
+.potential-tier {
+  color: lightblue;
+}
+
+.potential-tier-box {
+  border-color: lightblue;
+  border-style: solid;
 }
 
 .cube-box {

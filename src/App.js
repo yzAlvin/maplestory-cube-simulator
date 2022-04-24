@@ -1,6 +1,6 @@
 import "./App.css";
 
-function Item({ img, type, str, dex, int, luk, att, matt }) {
+function Item({ img, type, str, dex, int, luk, att, matt, potential }) {
   return (
     <div className="cube-box">
       <img
@@ -20,9 +20,21 @@ function Item({ img, type, str, dex, int, luk, att, matt }) {
           <li>Attack Power: {att}</li>
           <li>Magic Attack: {matt}</li>
         </ul>
+      <Potential potential={potential}/>
       </div>
     </div>
   );
+}
+
+function Potential({potential}) {
+  return (
+        <ul className="potential-list">
+          <li className="potential-tier"><span className="potential-tier-box">R</span> Potential</li>
+          <li>{potential.line1}</li>
+          <li>{potential.line2}</li>
+          <li>{potential.line3}</li>
+        </ul>
+  )
 }
 
 function App() {
@@ -37,6 +49,11 @@ function App() {
           luk="+10"
           att="+10"
           matt="+10"
+          potential={{
+            line1: "Critical Rate +4%",
+            line2: "Critical Rate +4%",
+            line3: "Critical Rate +4%"
+          }}
         ></Item>
         <Item
           img="fangblade.png"
@@ -47,6 +64,11 @@ function App() {
           luk="+15"
           att="+15"
           matt="+15"
+          potential={{
+            line1: "Critical Rate +4%",
+            line2: "Critical Rate +4%",
+            line3: "Critical Rate +4%"
+          }}
         ></Item>
     </div>
   );
