@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 function Item({ img, type, str, dex, int, luk, att, matt }) {
@@ -29,7 +28,6 @@ function Item({ img, type, str, dex, int, luk, att, matt }) {
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
         <Item
           img="https://cdn.discordapp.com/attachments/331409868693176320/955863447642447932/D1123DDE-EB77-48EE-B571-E44E98861CDC.jpg"
           type="Cat"
@@ -50,7 +48,6 @@ function App() {
           att="+15"
           matt="+15"
         ></Item>
-      </header>
     </div>
   );
 }
