@@ -1,7 +1,20 @@
 import "./App.css";
+import { useState } from "react";
 
 function Item({ img, type, str, dex, int, luk, att, matt, potential }) {
+  const [potentialStats, setPotentialStats] = useState(potential)
+  function cubeItem() {
+    setPotentialStats(
+          {
+            line1: "All Stat +13%",
+            line2: "All Stat +13%",
+            line3: "All Stat +13%"
+          }
+    )
+  }
+
   return (
+    <>
     <div className="cube-box">
       <img
         className="cube-image"
@@ -20,9 +33,13 @@ function Item({ img, type, str, dex, int, luk, att, matt, potential }) {
           <li>Attack Power: {att}</li>
           <li>Magic Attack: {matt}</li>
         </ul>
-      <Potential potential={potential}/>
+      <Potential potential={potentialStats}/>
       </div>
     </div>
+    <div>
+      <button onClick={() => cubeItem()}>Cube</button>
+    </div>
+  </>
   );
 }
 
